@@ -15,21 +15,18 @@ var draw = function(x, y) {
 var initialize = function(gridWidth, gridHeight) {
   var grid = [];
   for (i=0; i<=gridWidth; i++) {
-    //push arrays in
+    // push arrays in
     grid.push([]);
-    for (j=0; j<=gridHeight; i++) {
-      //push booleans into here
+    for (j=0; j<=gridHeight; j++) {
+      // push booleans into pushed in arrays
       grid[i].push(false);
     }
   }
+  console.log(grid);
 };
 
-var grid = initialize();
+// var grid = initialize();
 
-
-
-
-
-
+initialize(3, 3);
 
 draw(20, 20);
